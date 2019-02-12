@@ -8,7 +8,15 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-      <h1>Hello World, we are software developers</h1>
+      <h1 id="title">Hello World, we are software developers</h1>
+      <p id="description">This are some information we need from you</p>
+      <form id="survey-form" action="index.html" method="post">
+        <label for="name" id="name-label">Name:</label> <input type="text" id="name" value="name" placeholder="Enter your name." required><br>
+        <label for="email" id="email-label">email:</label> <input type="email" id="email" value="email" placeholder="Enter your email." required><br>
+        <label for="age" id="number-label">Age:</label> <input type="number" min="1" max="125" id="number" value="age" placeholder="Enter your age" required><br>
+
+
+      </form>
     <!--
 
     Hello Camper!
