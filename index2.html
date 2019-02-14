@@ -20,57 +20,52 @@
     Good luck and Happy Coding!
     - The freeCodeCamp Team
     -->
-  <nav id="navbar" >
-    <ul class="nav justify-content-end">
-        
+    <nav id="navbar">
+      <ul class="nav justify-content-end">
         <li class="nav-item">
-            <a class="nav-link" href="#welcome-section">About</a>
+          <a class="nav-link" href="#welcome-section">About</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-                <a class="nav-link" href="">Contact Us</a>
-            </li>
-        
-    </ul>
-   
-  </nav>
-
-  <section class="padding:80px">
-    <div class="" id="welcome-section" style="height:578px;">
-      <div class="">
-        <div class="ml-150"  >
-          <h1 class="">Hey i'am Mimic.</h1>
-          <p class="">a web developer</p>
+          <a class="nav-link" href="">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="padding:80px">
+      <div class="" id="welcome-section" style="height:919px;">
+        <div class="">
+          <div class="ml-150">
+            <h1 class="">Hey i'am Mimic.</h1>
+            <p class="">a web developer</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="projects" >
-    <div class="row"  >
-      <div class="col-md-6 project-tile">
-        <a href="#">project1</a>
-      </div>
-      <div class="col-md-6 project-tile">
-            <a href="#">project2</a>
-      </div>
-    </div>
-    <div class="row"  >
+    <section id="projects" >
+      <div class="row">
         <div class="col-md-6 project-tile">
+          <a href="#">project1</a>
+        </div>
+        <div class="col-md-6 project-tile">
+          <a href="#">project2</a>
+        </div>
+      </div>
+      <div class="row"  >
+          <div class="col-md-6 project-tile">
             <a href="#">project4</a>
-        </div>
-        <div class="col-md-6 project-tile">
-                <a href="#">project4</a>
-        </div>
-    </div>
-  </section>
+          </div>
+          <div class="col-md-6 project-tile">
+            <a href="#">project4</a>
+          </div>
+      </div>
+    </section>
 
-  <section id="contact">
-    <a id='profile-link' href="https://github.com/trillianjose/fcc-test-suite-template" target="_blank" class="contact-details">GitHub</a>
-  </section>
-
+    <section id="contact">
+      <a id='profile-link' href="https://github.com/trillianjose/fcc-test-suite-template" target="_blank" class="contact-details">GitHub</a>
+    </section>
 
     <script  src="js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -89,7 +84,7 @@
         // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
         function myFunction() {
             if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
+              navbar.classList.add("sticky")
             } else {
                 navbar.classList.remove("sticky");
             }
