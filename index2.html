@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
   </head>
 
@@ -19,31 +20,50 @@
     Good luck and Happy Coding!
     - The freeCodeCamp Team
     -->
-  <nav id="navbar">
+  <nav id="navbar" >
     <ul class="nav justify-content-end">
-      <li><a href="#welcome-section">About</a></li>
-      <li><a href="#projects">Projects</a></li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href="#welcome-section">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="">Contact Us</a>
+            </li>
+        
     </ul>
+   
   </nav>
 
-  <section>
-    <div class="container" id="welcome-section">
-      <div class="card">
-        <div class="card-body">
-          <h1 class="card-title">Hey i'am Mimic.</h1>
-          <p class="card-text">a web developer</p>
+  <section class="padding:80px">
+    <div class="" id="welcome-section" style="height:578px;">
+      <div class="">
+        <div class="ml-150"  >
+          <h1 class="">Hey i'am Mimic.</h1>
+          <p class="">a web developer</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="projects">
-    <div class="row">
+  <section id="projects" >
+    <div class="row"  >
       <div class="col-md-6 project-tile">
-        <a href="#">project</a>
+        <a href="#">project1</a>
       </div>
       <div class="col-md-6 project-tile">
+            <a href="#">project2</a>
       </div>
+    </div>
+    <div class="row"  >
+        <div class="col-md-6 project-tile">
+            <a href="#">project4</a>
+        </div>
+        <div class="col-md-6 project-tile">
+                <a href="#">project4</a>
+        </div>
     </div>
   </section>
 
@@ -52,13 +72,28 @@
   </section>
 
 
-
-
-
-
     <script  src="js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
   </body>
 </html>
